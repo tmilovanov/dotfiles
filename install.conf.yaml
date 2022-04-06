@@ -1,6 +1,14 @@
 - clean: ['~']
 
+# Внутри одного объекта link нет возможности указать порядок выполнения
+# Но все блоки внутри этого yaml файла выполняются последовательно, поэтому можно сделать 2 блока link, один после другого
 - link:
     ~/.gitconfig: data/git/.gitconfig
+    ~/.tmux.conf: data/tmux/.tmux.conf
+    ~/.oh-my-zsh: data/zsh/ohmyzsh
+    ~/.zshrc: data/zsh/.zshrc
+
+- link:
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: data/zsh/zsh-autosuggestions
 
 - shell: []

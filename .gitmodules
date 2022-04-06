@@ -2,3 +2,9 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "data/zsh/ohmyzsh"]
+	path = data/zsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "data/zsh/zsh-autosuggestions"]
+	path = data/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
