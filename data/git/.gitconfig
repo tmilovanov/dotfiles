@@ -1,0 +1,14 @@
+[includeIf "gitdir:~/JOB/"]
+	path = ~/.gitconfig-job
+[includeIf "gitdir:~/MYPROJECTS/"]
+	path = ~/.gitconfig-myprojects
+[alias]
+        l = log --graph --oneline --decorate
+        stat = status --short
+        commend = commit --amend --no-edit
+        tg = tag --annotate --message ''
+        tg-remote = !sh -c 'git tag --annotate --message="$0" "$0" && git push origin "$0"'
+        tg-ls-last = describe --tags --abbrev=0
+        crazy = !git add . && git commend && git push -f
+        st = stash --include-untracked -m
+        push-branch-new = push --set-upstream origin HEAD
