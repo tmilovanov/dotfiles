@@ -1,7 +1,11 @@
 [includeIf "gitdir:~/JOB/"]
-	path = ~/.gitconfig-job
+	path = ~/JOB/.gitconfig-job
 [includeIf "gitdir:~/MYPROJECTS/"]
-	path = ~/.gitconfig-myprojects
+	path = ~/MYPROJECTS/.gitconfig-myprojects
+[url "ssh://git@gitlab.tcsbank.ru:7999/"]
+        insteadOf = https://gitlab.tcsbank.ru/
+[url "ssh://git@stash.tcsbank.ru:7999/"]
+        insteadOf = https://stash.tcsbank.ru/scm/
 [alias]
         l = log --graph --oneline --decorate
         stat = status --short
