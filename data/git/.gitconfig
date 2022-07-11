@@ -10,6 +10,7 @@
         l = log --graph --oneline --decorate
         stat = status --short
         commend = commit --amend --no-edit
+	dsc-st-hd = rev-parse --short=8 HEAD
         tg = tag --annotate --message ''
         tg-remote = !sh -c 'git tag --annotate --message="$0" "$0" && git push origin "$0"'
         tg-ls-last = describe --tags --abbrev=0
